@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Redirects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        button {
+            display: block;
+            width: 200px;
+            margin: 10px auto;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Click a button to redirect:</h1>
+    <button onclick="redirectToPage1()">Add Medicine</button>
+    <button onclick="redirectToPage2()">Check Medicine</button>
+
+    <script>
+        function redirectToPage1() {
+            window.location.href = "login-add-medicine.html"; // Redirect to page1.html
+        }
+
+        function redirectToPage2() {
+            window.location.href = "login-check-medicine.html"; // Redirect to page2.html
+        }
+    </script>
+</body>
+
+</html>
