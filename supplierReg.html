@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navpage.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="stylesheet" href="css/footerpage.css">
+</head>
+
+<body>
+    
+    <header></header>
+    <div id="side-nav" style="right:-200px">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a>
+                    <li>
+                        <li><a href="signinregister.html">SignIn/Register</a></li>
+             
+                        <li><a href="about.html">About Us</a></li>
+                    
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+        <div id="menu-btn">
+            <img src="images/resources/menu.png" id="menu">
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="title">
+            Supplier Registration Form
+        </div>
+        <form id="supplierform">
+            <div class="inputs">
+                <div class="inputfield">
+                    <label>First Name:</label>
+                    <input id="fname" type="text" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Last Name:</label>
+                    <input id="lname" type="text" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Email Address:</label>
+                    <input id="emailid" type="text" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Manufacturer name:</label>
+                    <input id="mname" type="text" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Address:</label>
+                    <textarea id="address" class="textarea" required></textarea>
+                </div>
+                <div class="inputfield">
+                    <label>Postal Code:</label>
+                    <input id="postalcode" type="text" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>No. of medicines supplied in a year:</label>
+                    <input id="medno" type="text" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Phone Number:</label>
+                    <input id="phno" type="text" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Government approved License:</label>
+                    <input id="govlic" type="file" name="f" required>
+                </div>
+                <div class="inputfield terms">
+                    <label class="check">
+            <input type="checkbox" required>
+            <span class="checkmark"></span>
+          </label>
+                    <p>Agreed to terms and conditions</p>
+                </div>
+                <div class="inputfield">
+                    <input type="submit" value="Register" class="btn">
+                </div>
+            </div>
+        </form>
+    </div>
+    
+
+</body>
+<script src="js/navbarscript.js"></script>
+
+</html>
